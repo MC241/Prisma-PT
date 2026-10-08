@@ -14,7 +14,7 @@ A lot of young people in Portugal follow politics through social media, where ne
 
 I followed the Design Thinking process from start to finish. I began with user research with 33 participants, then turned what I learned into user journeys, user stories, How Might We questions and a sitemap. After ideation I designed and prototyped the app in Figma, tested the key screens with users, and then coded it.
 
-Testing showed the Debates feature was one of the most distinctive parts of the experience, so I gave it its own page with an audio player, so users can follow debates on the go instead of only reading summaries.
+Testing showed the Debates feature was one of the most distinctive parts of the experience. Users reported that the page was extensive with main arguments for each party visible so I collapsed them in the final version keeping a summary of the party's position visible.
 
 ## Main features
 
