@@ -19,8 +19,7 @@ Testing showed the Debates feature was one of the most distinctive parts of the 
 ## Main features
 
 - **Verified news**: a feed of political news from checked sources, so you always know where a story comes from.
-- **Side-by-side party positions**: compare what each party proposes on the same topic, all on one screen.
-- **Debates**: browse political debates by topic and listen to them with the built-in audio player.
+- **Debates**: browse political debates by topic and compare what each party proposes all on one screen.
 - **Personalised profile**: pick the topics you care about so the app shows you what's most relevant.
 
 ## Built with
