@@ -8,23 +8,24 @@ A mobile news app that helps young adults understand Portuguese politics through
 
 ## Why I made it
 
-[One or two sentences on the problem, in your own words. For example, what you noticed about how young people in Portugal follow politics.]
+A lot of young people in Portugal follow politics through social media, where news is scattered and it's hard to tell what each party actually stands for. I wanted a single place where they could trust the sources and compare positions without reading entire party manifestos.
 
 ## How I got there
 
 I followed the Design Thinking process from start to finish. I began with user research with 33 participants, then turned what I learned into user journeys, user stories, How Might We questions and a sitemap. After ideation I designed and prototyped the app in Figma, tested the key screens with users, and then coded it.
 
-Testing showed the Debates feature was one of the most distinctive parts of the experience, so [what you changed or emphasised because of that].
+Testing showed the Debates feature was one of the most distinctive parts of the experience, so I gave it its own page with an audio player, so users can follow debates on the go instead of only reading summaries.
 
 ## Main features
 
-- Verified news [short description]
-- Side-by-side party positions [short description]
-- Debates [short description]
+- **Verified news**: a feed of political news from checked sources, so you always know where a story comes from.
+- **Side-by-side party positions**: compare what each party proposes on the same topic, all on one screen.
+- **Debates**: browse political debates by topic and listen to them with the built-in audio player.
+- **Personalised profile**: pick the topics you care about so the app shows you what's most relevant.
 
 ## Built with
 
-HTML, CSS, JavaScript, Bootstrap 5
+HTML, CSS, JavaScript, Bootstrap 5, Bootstrap Icons, Swiper, GSAP
 
 ## Run it locally
 
@@ -32,7 +33,7 @@ Clone the repo and open `index.html` in your browser.
 
 ## What I'd do next
 
-[One or two honest lines, e.g. features you'd add or what you'd improve after testing.]
+Connect the app to a live news source instead of static content, and run a second round of testing with a larger group to see how people use the party comparison over time.
 
 ---
 
