@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Prisma PT - Notícias Destaque">
+        <meta name="author" content="Marta Cruz">
+        <title>Prisma PT - Notícias Destaque</title>
+        <!--Bootstrap icons + CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Custom CSS Stylesheet-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body class="m-0">
+        <div class="main-container mx-auto bg-white shadow min-vh-100">
+            <header class="header d-flex align-items-start text-white p-3">
+                <a href="./home.html" class="d-inline-flex align-items-center gap-1 text-decoration-none text-reset">
+                    <i class="bi bi-arrow-left"></i>
+                    <span>Voltar</span>
+                </a>
+            </header>
+        <main class="px-3">
+            <article class="d-flex flex-column gap-4 mb-4">
+                <header class="d-flex flex-column border-bottom gap-2 pb-2">
+                    <img src="./assets/Imagens/Destaque_page/assemb_rep.svg" alt="Fachada da Assembleia da República">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="badge rounded-pill badge-factual d-inline-flex align-items-center gap-1">
+                            <img src="./assets/icons/factual.svg" alt="" class="badge-icon">Factual
+                        </span>
+                        <span class="news-category fw-bold">Legislação</span>
+                    </div>
+                    <h1 class="h4 fw-bold mb-0">Assembleia aprova alterações ao Orçamento de Estado para 2026</h1>
+                    <div class="d-flex justify-content-between align-items-center destaque-meta">
+                        <time datetime="2025-12-22T13:38">22 dez 2025, 13:38</time>
+                        <span>José Silva</span>
+                    </div>
+                    <span class="destaque-meta">Tempo de leitura: ~45s - 1 min</span>
+                </header>
+                <aside class="news-lead rounded-2 p-3">
+                    <p class="fw-bold mb-0">
+                        Parlamento vota a favor de propostas de alteração ao OE2026 com maioria absoluta. Alterações incluem novos apoios sociais.
+                    </p>
+                </aside>
+
+                <!--Audio card-->
+                <div class="card border-0 shadow">
+                    <div class="card-body d-flex flex-column gap-2">
+                        <audio id="destaqueAudio" preload="metadata">
+                            <source src="./assets/audio/destaque_audio.mp3" type="audio/mpeg">
+                            O seu navegador não suporta audio.
+                        </audio>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="section-icon-audio d-inline-flex align-items-center justify-content-center rounded-2">
+                                    <i class="bi bi-headphones fs-4"></i>
+                                </div>
+                                <div class="d-flex flex-column gap-1">
+                                    <p class="card-title audio-title fw-bold mb-0">Ouça este artigo</p>
+                                    <p class="audio-meta mb-0">Versão aúdio - 1:10</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn" id="volume" aria-label="Volume">
+                                <i class="bi bi-volume-up fs-4"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="progress usage-progress" id="audioProgress" role="progressbar" aria-label="Progresso do aúdio" aria-valuenow ="0" aria-valuemin="0" aria-valuemax="60">
+                            <div class="progress-bar" id="audioProgressBar"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button type="button" class="btn" id="skipStart" aria-label="Anterior">
+                                <i class="bi bi-skip-start fs-4"></i>
+                            </button>
+                            <button type="button" class="btn" id="playPauseBtn" aria-label="Reproduzir">
+                                <img id="playIcon" src="./assets/icons/play_btn_circle.svg">
+                            </button>
+                            <button type="button" class="btn" id="skipEnd" aria-label="Próximo">
+                                <i class="bi bi-skip-end fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-body border-bottom">
+                    <p>A Assembleia da República aprovou hoje alterações significativas ao Orçamento de Estado para 2026, com votos favoráveis de 145 deputados.</p>
+                    <p>As principais alterações incluem:</p>
+                        <ul>
+                            <li>Aumento do salário mínimo nacional para €900</li>
+                            <li>Novos apoios para famílias com rendimentos até €1.500</li>
+                            <li>Investimento adicional de €200 milhões no Serviço Nacional de Saúde</li>
+                            <li>Redução do IVA da energia de 13% para 6%</li>
+                        </ul>
+                    <p>A votação decorreu após três dias de debate parlamentar intenso, onde foram discutidas mais de 300 propostas de alteração apresentadas pelos diversos partidos.</p>
+                    <p>O Governo manifestou satisfação com a aprovação, considerando que estas medidas vão "melhorar a vida dos portugueses" e "fortalecer os serviços públicos". A oposição dividiu-se entre quem apoiou as alterações e quem considerou que não vão suficientemente longe.</p>
+                    <p class="mb-4">As medidas entram em vigor a 1 de março de 2026.</p>
+                </div>
+                
+                <footer>
+                    <aside class="card verified-content">
+                        <div class="card-body">
+                            <h6 class="card-title d-inline-flex align-items-center fw-bold gap-2 mb-2">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Fonte Verificada
+                            </h6>
+                            <p class="card-text mb-0 ms-4">Assembleia da República (Comunicado Oficial)</p>
+                        </div>
+                    </aside>
+                </footer>
+            </article>
+        </main>
+    </div>
+        <nav class="navbar fixed-bottom bg-white border-top p-0 mx-auto bottom-nav">
+            <ul class="nav nav-justified flex-nowrap w-100 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-center px-0 py-2" href="./home.html" aria-current="page">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Notícias</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./partidos.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Partidos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./conceitos.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Conceitos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./debates.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Debates</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./perfil.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+        <!--Custom JS-->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

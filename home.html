@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Prisma PT Home Page">
+        <meta name="author" content="Marta Cruz">
+        <title>Prisma PT - Notícias Políticas</title>
+        <!--Bootstrap icons + CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Custom CSS Stylesheet-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body class="m-0">
+        <div class="main-container mx-auto bg-white shadow min-vh-100">
+            <!---Header-->
+            <header class="header d-flex flex-column text-white gap-3 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/logo/logo_home.svg" alt="">
+                        <h1 class="h2 fw-bold m-0">Prisma PT</h1>
+                    </div>
+                    <button class="btn btn-link p-0" aria-label="Procurar">
+                        <i class="bi bi-search text-white fs-4"></i>
+                    </button>
+                </div>
+                <p class="header-desc mb-0">Informação política clara e acessível</p>
+            </header>
+            <main class="px-3 d-flex flex-column gap-4 my-4">
+                <!---Destaque section-->
+                <section>
+                    <h2 class="section-title fw-bold mb-3">Em Destaque</h2>
+                    <article class="card shadow border-0">
+                        <a href="./destaque.html" class="text-decoration-none text-reset">
+                            <div class="position-relative">
+                                <img src="./assets/Imagens/Home_page/destaque/destaque_img.svg" alt="Fachada da Assembleia da República">
+                                <div class="position-absolute top-0 start-0 p-2">
+                                    <span class="badge rounded-pill badge-factual d-inline-flex align-items-center gap-1">
+                                        <img src="./assets/icons/factual.svg" alt="" class="badge-icon">Factual
+                                    </span>
+                                </div>
+                                <div class="position-absolute top-0 end-0 p-2">
+                                    <span class="badge rounded-pill badge-destaque d-inline-flex align-items-center gap-1">
+                                        <img src="./assets/icons/trend.svg" alt="" class="badge-icon">Destaque
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column gap-2">
+                                <span class="news-category fw-bold d-inline-block">Legislação</span>
+                                <h5 class="card-title highlight-title fw-bold mb-0">Assembleia aprova alterações ao Orçamento de Estado para 2026</h5>
+                                <p class="card-text mb-0">Parlamento vota a favor de propostas de alteração ao OE2026 com maioria absoluta.</p>
+                                <div class="d-flex justify-content-between align-items-center gap-2 news-meta">
+                                    <span>Assembleia da República (Comunicado Oficial)</span>
+                                    <time datetime="2026-05-02T08:00:00">Há 2 horas</time>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <!---Recentes section-->
+                <section>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        <!---Saúde card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="badge rounded-pill badge-opinion d-inline-flex align-items-center gap-1">
+                                            <img src="./assets/icons/speech bubble.svg" alt="opinião" class="badge-icon">Opinião
+                                        </span>
+                                        <span class="news-category fw-bold">Saúde</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                                        <h6 class="card-title news-title fw-bold mb-0 align-self-center">A necessidade urgente de reforma do sistema de saúde</h6>
+                                        <img src="./assets/Imagens/Home_page/news/health.svg" alt="Médica a consultar paciente idoso.">
+                                    </div>
+                                    <div class="d-flex justify-content-between news-meta">
+                                        <span>Observador Político</span>
+                                        <time datetime="2026-05-02T08:00:00">Há 5 horas</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Habitação card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="badge rounded-pill badge-factual d-inline-flex align-items-center gap-1">
+                                            <img src="./assets/icons/factual.svg" alt="" class="badge-icon">Factual
+                                        </span>
+                                        <span class="news-category fw-bold">Habitação</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                                        <h6 class="card-title news-title fw-bold mb-0 align-self-center">Presidente promulga lei da habitação acessível</h6>
+                                        <img class="news-img" src="./assets/Imagens/Home_page/news/housing.svg" alt="Programa Renda Acessível poster">
+                                    </div>
+                                    <div class="d-flex justify-content-between news-meta">
+                                        <span>Presidência da República</span>
+                                        <time datetime="2026-05-02T08:00:00">Há 1 dia</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Economia card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="badge rounded-pill badge-opinion d-inline-flex align-items-center gap-1">
+                                            <img src="./assets/icons/speech bubble.svg" alt="" class="badge-icon">Opinião
+                                        </span>
+                                        <span class="news-category fw-bold">Economia</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                                        <h6 class="card-title news-title fw-bold mb-0 align-self-center">O dialema entre crescimento económico e sustentabilidade</h6>
+                                        <img src="./assets/Imagens/Home_page/news/economy.svg" alt="Plantas verdes a crescer sobre gráfico ascendente.">
+                                    </div>
+                                    <div class="d-flex justify-content-between news-meta">
+                                        <span>Análise Política PT</span>
+                                        <time datetime="2026-05-02T08:00:00">Há 1 dia</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Desemprego card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="badge rounded-pill badge-factual d-inline-flex align-items-center gap-1">
+                                            <img src="./assets/icons/factual.svg" alt="" class="badge-icon">Factual
+                                        </span>
+                                        <span class="news-category fw-bold">Desemprego</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                                        <h6 class="card-title news-title fw-bold mb-0 align-self-center">Dados oficiais mostram redução do desemprego para 5.8%</h6>
+                                        <img src="./assets/Imagens/Home_page/news/unemployment.svg" alt="Instituto do emprego e formação profissional">
+                                    </div>
+                                    <div class="d-flex justify-content-between news-meta">
+                                        <span>INE - Instituto Nacional de Estatística</span>
+                                        <time datetime="2026-05-02T08:00:00">Há 2 dias</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Justiça card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="badge rounded-pill badge-opinion d-inline-flex align-items-center gap-1">
+                                            <img src="./assets/icons/speech bubble.svg" alt="" class="badge-icon">Opinião
+                                        </span>
+                                        <span class="news-category fw-bold">Justiça</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-2">
+                                        <h6 class="card-title news-title fw-bold mb-0 align-self-center">Reforma da justiça: rápida ou eficaz?</h6>
+                                        <img src="./assets/Imagens/Home_page/news/justice.svg" alt="Estátua de uma senhora a segurar uma balança">
+                                    </div>
+                                    <div class="d-flex justify-content-between news-meta">
+                                        <span>Observador Político</span>
+                                        <time datetime="2026-05-02T08:00:00">Há 3 dias</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <!--Podcast section-->
+                <section>
+                    <h2 class="section-title fw-bold mb-3">Podcasts & Áudios</h2>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        <!--Podcast1 card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body d-flex align-items-start gap-3">
+                                    <img src="./assets/icons/audio_square.svg" alt="" class="flex-shrink-0">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <h6 class="card-title audio-title fw-bold flex-grow-1 mb-0">Como Funciona o Orçamento de Estado?</h6>
+                                            <span class="badge rounded-pill badge-new">NOVO</span>
+                                        </div>
+                                        <p class="audio-source mb-2">Política Explicada</p>
+                                        <div class="d-flex align-items-center gap-3 audio-meta">
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/clock.svg" alt="" class="badge-icon">12:35
+                                            </span>
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/play.svg" alt="" class="badge-icon">2.3k plays
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Podcast2 card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body d-flex align-items-start gap-3">
+                                    <img src="./assets/icons/audio_square.svg" alt="" class="flex-shrink-0">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <h6 class="card-title audio-title fw-bold flex-grow-1 mb-0">Debate: Semana de 4 Dias - Prós e Contras</h6>
+                                            <span class="badge rounded-pill badge-new">NOVO</span>
+                                        </div>
+                                        <p class="audio-source mb-2">Debates</p>
+                                        <div class="d-flex align-items-center gap-3 audio-meta">
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/clock.svg" alt="" class="badge-icon">18:45
+                                            </span>
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/play.svg" alt="" class="badge-icon">1.8k plays
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Podcast3 card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body d-flex align-items-start gap-3">
+                                    <img src="./assets/icons/audio_square.svg" alt="" class="flex-shrink-0">
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title audio-title fw-bold">História da Democracia Portuguesa</h6>
+                                        <p class="audio-source mb-2">História</p>
+                                        <div class="d-flex align-items-center gap-3 audio-meta">
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/clock.svg" alt="" class="badge-icon">15:20
+                                            </span>
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/play.svg" alt="" class="badge-icon">5.1k plays
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <!--Podcast4 card-->
+                        <li>
+                            <article class="card border-0 shadow-sm">
+                                <div class="card-body d-flex align-items-start gap-3">
+                                    <img src="./assets/icons/audio_square.svg" alt="" class="flex-shrink-0">
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title audio-title fw-bold">Entrevista : Jovens e Política</h6>
+                                        <p class="audio-source mb-2">Entrevistas</p>
+                                        <div class="d-flex align-items-center gap-3 audio-meta">
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/clock.svg" alt="" class="badge-icon">12:35
+                                            </span>
+                                            <span class="d-inline-flex align-items-center gap-1">
+                                                <img src="./assets/icons/play.svg" alt="" class="badge-icon">2.3k plays
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!---Nav bar-->
+        <nav class="navbar fixed-bottom bg-white border-top p-0 mx-auto bottom-nav">
+            <ul class="nav nav-justified flex-nowrap w-100 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-center px-0 py-2" href="./home.html" aria-current="page">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Notícias</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./partidos.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Partidos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./conceitos.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Conceitos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./debates.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Debates</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center px-0 py-2" href="./perfil.html">
+                        <svg class="d-block mx-auto mb-1 nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+            </script>
+
+        <!--Custom JS-->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

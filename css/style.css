@@ -1,0 +1,322 @@
+/*===================================================================================================== 
+                                            ROOT + BASE
+======================================================================================================*/
+
+body{
+    font-family: Arial, sans-serif;
+    background:#fff;
+    color:#0A0A0A;
+}
+
+/*===================================================================================================== 
+                                    LAYOUT - Container + main structure 
+======================================================================================================*/
+
+.main-container, .main-container-anim{
+    max-width: 375px;
+    padding-bottom: 59px;
+}
+
+.main-container-anim{
+    background:#1555F4;
+    color: white;
+}
+/*===================================================================================================== 
+                                        HEADERS -Page headers 
+======================================================================================================*/
+
+.header{
+    background-image: linear-gradient(to bottom right, #1555F4 0%, #1447E6 100%);
+}
+
+.header-desc{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.psd-header{
+    background-color:#F77753;
+}
+
+/*===================================================================================================== 
+                                TYPOGRAPHY - section titles + shared text styles 
+======================================================================================================*/
+
+.section-title{
+    font-size: 20px;
+}
+
+.card-text{
+    font-size: 14px;
+    color:#314158;
+}
+
+/*===================================================================================================== 
+                                            ICONS
+======================================================================================================*/
+
+.badge-icon{
+    width: 14px;
+    height: 14px;
+}
+
+.title-icon, .nav-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.card-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.party-circle, .profile-circle{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+
+/*===================================================================================================== 
+                                            BADGES 
+======================================================================================================*/
+
+.badge{
+    --bs-badge-font-size: 14px;
+}
+
+.badge-factual{
+    background:#E3FCDC;
+    color:#008236;
+}
+
+.badge-destaque{
+    background: #FFDBDB;
+    color:#BB0000;
+}
+
+.badge-opinion{
+    background:#FEF3C6;
+    color:#BB4D00;
+}
+
+.badge-new{
+    background:#E1F4FC;
+    color:#0EA5E9;
+}
+
+.badge-ideology, .badge-artigo{
+    background:#F1F5F9;
+    color:#314158;
+}
+
+.badge-infographic{
+    background:#DBEAFE;
+    color:#1555F4;
+}
+
+.badge-video{
+    background:#fee0c6;
+    color:#bb4e00;
+}
+
+
+/*===================================================================================================== 
+                                    CARDS - News cards/ Debate cards/PSD cards
+======================================================================================================*/
+
+.news-category{
+    font-size: 14px;
+    color:#1555F4;
+}
+
+.card-title.highlight-title, .card-title.debate-title{
+    font-size: 18px;
+}
+
+.card-title.news-title,
+.card-title.audio-title,
+.card-title.topic-title,
+.card-title.party-title,
+.card-title.pref-title,
+.form-label,
+.card-title.screen-time{
+    font-size: 14px;
+}
+
+.arguments-card{
+    background-color:#F1F5F9;
+}
+
+.arguments-card summary{
+    cursor:pointer;
+}
+
+.arguments-card[open] summary{
+    margin-bottom:.5rem;
+}
+
+.arguments-card .card-text{
+    color:#314158;
+    font-size: 12px;
+}
+
+.policy-list, .arguments-card ul{
+    list-style-type: disc;
+}
+.policy-list li::marker, .arguments-card ul li::marker{
+    color:#1555F4;
+}
+
+/*===================================================================================================== 
+                                    META TEXT - Card meta, source labels 
+======================================================================================================*/
+
+.news-meta,
+.audio-meta,
+.debate-meta,
+.party-position,
+.d-pref{
+    font-size: 12px;
+    color:#62748E;
+}
+
+.audio-source,
+.political-position{
+    font-size: 13px;
+    color:#314158;
+}
+
+
+.destaque-meta,
+.form-control{
+    font-size: 14px;
+    color:#62748E;
+}
+/*===================================================================================================== 
+                                            OPEN ANIMATION 
+======================================================================================================*/
+.box{
+    width:100px;
+    height:100px;
+    border-radius: 20%;
+}
+
+.box svg{
+    width:70%;
+    height:70%;
+    transform:rotate(45deg);
+}
+
+/*===================================================================================================== 
+                                            DESTAQUE PAGE 
+======================================================================================================*/
+
+.news-body{
+    color:#314158;
+}
+
+.news-lead{
+    background-color:#ECEFF8;
+    border-left: 4px solid #1E40AF;
+    color:#314158;
+    font-size: 14px;
+}
+
+.section-icon-audio i.bi.bi-headphones{
+    color:#1E40AF;
+}
+.verified-content{
+    background-color:#ECEFF8;
+    border-color: #1e40af60 ;
+    color:#314158;
+}
+
+.verified-content i.bi.bi-box-arrow-up-right{
+    color:#1555F4;
+}
+
+.btn{
+    min-width:44px;
+    min-height:44px;
+}
+/*===================================================================================================== 
+                                        CONCEPTS PAGE - Section icon boxes
+======================================================================================================*/
+
+.section-icon-purple,
+.section-icon-blue,
+.section-icon-green,
+.section-icon-audio{
+    width: 36px;
+    height: 36px;
+}
+
+.section-icon-purple{
+    background-color:#F3E8FF;
+}
+.section-icon-blue{
+    background-color:#E1F4FC;
+}
+
+.section-icon-green{
+    background-color:#E3FCDC;
+}
+
+.section-icon-audio{
+    background-color:#DBE0F2;
+}
+
+/*===================================================================================================== 
+                                            PERFIL PAGE
+======================================================================================================*/
+
+.btn-primary{
+    --bs-btn-font-size: 14px;
+    --bs-btn-bg: #1E40AF;
+    --bs-btn-border-color: #1E40AF;
+    --bs-btn-hover-bg: #1E40AF;
+    --bs-btn-hover-border-color: #1E40AF;
+    --bs-btn-active-bg: #0F1F4F;
+    --bs-btn-active-border-color: #0F1F4F;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/*Screen time sliders styling*/
+.usage-current{
+    color:#1E40AF;
+}
+
+.usage-progress{
+    height:8px;
+    background-color:#E2E8F0;
+}
+
+.slider-value{
+    color:#1E40AF;
+}
+
+/*TODO: MAKE SURE THIS IS WORKING*/
+.form-range::-webkit-slider-thumb,
+.form-range::-moz-range-thumb{
+    background-color:#1E40AF;
+}
+
+
+
+/*===================================================================================================== 
+                                            BOTTOM NAV 
+======================================================================================================*/
+
+.bottom-nav{
+    max-width: 375px;
+}
+
+.bottom-nav .nav{
+    --bs-nav-link-color:#62748E;
+    --bs-nav-link-font-size:12px;
+}
+
+.bottom-nav .nav-link.active{
+    color:#1555F4;
+}
