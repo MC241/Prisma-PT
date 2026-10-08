@@ -2,7 +2,7 @@
 
 A mobile news app that helps young adults understand Portuguese politics through verified news and side-by-side party positions.
 
-**Live site:** prisma-pt.vercel.app  ·  **Figma prototype:** [(https://www.figma.com/proto/ESvkv4ophXP50BtxclplP2/Prisma-PT-final--Copy-?node-id=10-1247&viewport=382%2C348%2C0.04&t=5hXIaF0wF2DxKhE1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2163%3A2983&page-id=0%3A1)]
+**Live site:** [prisma-pt.vercel.app](https://prisma-pt.vercel.app)  ·  **Figma prototype:** [View Prototype](https://www.figma.com/proto/ESvkv4ophXP50BtxclplP2/Prisma-PT-final?node-id=2198-2813&viewport=743%2C351%2C0.07&t=ooHjKKwbUz8WmSbe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2163%3A2983&page-id=0%3A1)
 
 ![Prisma PT screens](assets/readme/screens.png)
 
